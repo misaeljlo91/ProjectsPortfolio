@@ -1,0 +1,210 @@
+/* Paleta de colores */
+
+.color1 {color: #202020;}
+.color2 {color: #1b2e28;}
+.color3 {color: #1c4a47;}
+.color4 {color: #007261;}
+.color5 {color: #b1d2db;}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    user-select: none;
+}
+[v-cloak]{
+    display: none;
+}
+/* HEADER */
+
+header{
+    padding: 3rem 0 3rem 0;
+    background-image: url("../assets/5197441.jpg");
+    background-position: bottom;
+}
+a#language{
+    padding: 1rem !important;
+    color: #b1d2db;
+    text-decoration: none;
+}
+a#language:hover{
+    text-decoration: underline;
+}
+h1#name, h2#title{
+    text-align: center;
+    color: #b1d2db;
+}
+img.icon-header{
+    margin-right: 1rem !important;
+}
+
+/* CONTENIDO */
+
+main{
+    margin: 1rem 2rem 1rem 2rem;
+}
+div#about-me{
+    background: linear-gradient(to top, #1b2e28, #1c4a47);  
+    color: #b1d2db;
+    padding: 1rem 1.5rem 0 1.5rem !important;
+}
+h4.card-title{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+p.about-me{
+    text-indent: 48px !important;
+}
+div#html{
+    text-align: center !important;
+}
+div#wordpress{
+    text-align: center;
+}
+img.icon{
+    margin-right: .5rem !important;
+}
+div#carouselExampleSlidesOnly,
+div#carouselExampleSlidesOnly1,
+div#carouselExampleSlidesOnly2,
+div#carouselExampleSlidesOnly3,
+div#carouselExampleSlidesOnly4{
+    border-top: 2px solid #1b2e28;
+    border-right: 2px solid #1b2e28;
+    border-left: 2px solid #1b2e28;
+}
+div#projects{
+    border-right: 2px solid #1b2e28;
+    border-bottom: 2px solid #1b2e28;
+    border-left: 2px solid #1b2e28;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+button.accordion-button{
+    background: radial-gradient(#1c4a47, #007261);
+    color: #b1d2db;
+    font-size: large;
+}
+button.accordion-button:not(.collapsed){
+    background: radial-gradient(#1c4a47, #007261);
+    color: #b1d2db;
+}
+div.accordion-body{
+    border: none;
+}
+p.text-card{
+    text-indent: 48px !important;
+}
+a.project, a.project-2{
+    background-color: #007261;
+    border: none;
+}
+a.project:hover, a.project-2:hover{
+    background-color: #1c4a47;
+    text-decoration: underline;
+}
+h6.title-card{
+    border-left: 3px solid #1c4a47;
+    padding: .3rem 0 .3rem .8rem;
+    margin-left: .8rem;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #007261;
+    padding: 1rem 0 .2rem 0 !important;
+}
+p#footer-page{
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    /* CONTENIDO */
+
+    p.text-card{
+        text-indent: 32px !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    /* HEADER */
+
+    header{
+        background-position: top;
+    }
+    a#language{
+        padding: .5rem !important;
+    }
+    h2#title{
+        font-size: x-large !important;
+    }
+    img.icon-header, img.icon-header-2{
+        width: 24px !important;
+        margin-top: .8rem !important;
+    }
+
+    /* CONTENIDO */
+
+    div#about-me{
+        padding: .5rem .8rem 0 .8rem !important;
+    }
+    p.about-me{
+        text-indent: 24px !important;
+    }
+    div#html{
+        margin-bottom: 1rem;
+    }
+    p.text-card{
+        text-indent: 24px !important;
+    }
+    a.project{
+        margin-bottom: .5rem !important;
+    }
+
+    /* FOOTER */
+
+    p#footer-page{
+        font-size: small !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* HEADER */
+
+    h1#name{
+        font-size: x-large !important;
+    }
+    h2#title{
+        font-size: large !important;
+    }
+
+    /* FOOTER */
+
+    footer{
+        padding: 1rem .5rem .2rem .5rem !important;
+    }
+    p#footer-page{
+        font-size: x-small !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* CONTENIDO */
+
+    p.about-me{
+        font-size: smaller;
+    }
+    img.icon{
+        margin-right: .2rem !important;
+    }
+    p.text-card{
+        font-size: small !important;
+    }
+}

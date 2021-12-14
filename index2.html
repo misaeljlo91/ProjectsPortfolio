@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="app" v-cloak>
+<!-- Encabezado -->
+    <header class="row g-0 position-relative">
+        <a href="index.html" class="d-flex flex-row-reverse position-absolute top-0 end-0" id="language">Español</a>
+        <div class="col align-self-center">
+            <h1 id="name">Misael José López Rodríguez</h1>
+            <h2 id="title">Full stack JAVA Web Developer</h2>
+        </div>
+        <div class="row position-relative">
+            <div class="col-12 d-flex flex-row-reverse position-absolute top-0 end-0">
+                <a href="https://wa.me/5491123951146"><img src="./assets/whatsapp.png" alt="Whatsapp" class="icon-header-2"></a>
+                <a href="https://www.linkedin.com/in/misael-jose-lopez"><img src="./assets/linkedin.png" alt="LinkedIn" class="icon-header"></a>
+                <a href="mailto:misaeljlo91@gmail.com"><img src="./assets/gmail.png" alt="Gmail" class="icon-header"></a>
+            </div>
+        </div>
+    </header>
+<!-- Contenido -->
+
+<!-- Pie de página -->
+    <footer class="row g-0 align-items-center">
+        <p class="col" id="footer-page">&copy; {{momentDate(new Date())}} Misael J. López | Full Stack JAVA Web Developer</p>
+    </footer>
+</div>
+<!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+<!-- Vue.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
