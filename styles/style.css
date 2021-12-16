@@ -1,10 +1,10 @@
 /* Paleta de colores */
 
-.color1 {color: #202020;}
-.color2 {color: #1b2e28;}
-.color3 {color: #1c4a47;}
-.color4 {color: #007261;}
-.color5 {color: #b1d2db;}
+.color1 {color: #001b48;}
+.color2 {color: #004581;}
+.color3 {color: #018abd;}
+.color4 {color: #97cbdc;}
+.color5 {color: #dde8f0;}
 
 body{
     box-sizing: border-box;
@@ -19,21 +19,28 @@ body{
 /* HEADER */
 
 header{
-    padding: 3rem 0 3rem 0;
-    background-image: url("../assets/5197441.jpg");
+    padding: 1.5rem 0 3rem 0;
+    background-image: url("../assets/rm373batch2-04.jpg");
+    background-size: cover;
     background-position: bottom;
 }
 a#language{
     padding: 1rem !important;
-    color: #b1d2db;
+    color: #dde8f0;
     text-decoration: none;
 }
 a#language:hover{
     text-decoration: underline;
 }
-h1#name, h2#title{
+img.img-profile{
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+h1#name, h3#title{
     text-align: center;
-    color: #b1d2db;
+    color: #dde8f0;
 }
 img.icon-header{
     margin-right: 1rem !important;
@@ -45,8 +52,8 @@ main{
     margin: 1rem 2rem 1rem 2rem;
 }
 div#about-me{
-    background: linear-gradient(to top, #1b2e28, #1c4a47);  
-    color: #b1d2db;
+    background: linear-gradient(to top, #001b48, #004581);  
+    color: #dde8f0;
     padding: 1rem 1.5rem 0 1.5rem !important;
 }
 h4.card-title{
@@ -65,30 +72,35 @@ div#wordpress{
 img.icon{
     margin-right: .5rem !important;
 }
+h2.projects{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
 div#carouselExampleSlidesOnly,
 div#carouselExampleSlidesOnly1,
 div#carouselExampleSlidesOnly2,
 div#carouselExampleSlidesOnly3,
 div#carouselExampleSlidesOnly4{
-    border-top: 2px solid #1b2e28;
-    border-right: 2px solid #1b2e28;
-    border-left: 2px solid #1b2e28;
+    border-top: 2px solid #004581;
+    border-right: 2px solid #004581;
+    border-left: 2px solid #004581;
 }
 div#projects{
-    border-right: 2px solid #1b2e28;
-    border-bottom: 2px solid #1b2e28;
-    border-left: 2px solid #1b2e28;
+    border-right: 2px solid #004581;
+    border-bottom: 2px solid #004581;
+    border-left: 2px solid #004581;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 button.accordion-button{
-    background: radial-gradient(#1c4a47, #007261);
-    color: #b1d2db;
+    background: linear-gradient(to top, #001b48, #004581, #001b48);
+    color: #dde8f0;
     font-size: large;
 }
 button.accordion-button:not(.collapsed){
-    background: radial-gradient(#1c4a47, #007261);
-    color: #b1d2db;
+    background: linear-gradient(to top, #001b48, #004581, #001b48);
+    color: #dde8f0;
 }
 div.accordion-body{
     border: none;
@@ -97,15 +109,15 @@ p.text-card{
     text-indent: 48px !important;
 }
 a.project, a.project-2{
-    background-color: #007261;
+    background-color: #018abd;
     border: none;
 }
 a.project:hover, a.project-2:hover{
-    background-color: #1c4a47;
+    background-color: #004581;
     text-decoration: underline;
 }
 h6.title-card{
-    border-left: 3px solid #1c4a47;
+    border-left: 3px solid #018abd;
     padding: .3rem 0 .3rem .8rem;
     margin-left: .8rem;
 }
@@ -113,12 +125,13 @@ h6.title-card{
 /* FOOTER */
 
 footer{
-    background-color: #007261;
+    background-color: #004581;
     padding: 1rem 0 .2rem 0 !important;
 }
 p#footer-page{
+    color: #dde8f0;
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 1024px) {
@@ -142,8 +155,12 @@ p#footer-page{
     a#language{
         padding: .5rem !important;
     }
-    h2#title{
-        font-size: x-large !important;
+    img.img-profile{
+        width: 90px !important;
+        height: 90px !important;
+    }
+    h3#title{
+        font-size: large !important;
     }
     img.icon-header, img.icon-header-2{
         width: 24px !important;
@@ -178,11 +195,15 @@ p#footer-page{
 @media screen and (max-width: 375px) {
     /* HEADER */
 
+    img.img-profile{
+        width: 80px !important;
+        height: 80px !important;
+    }
     h1#name{
         font-size: x-large !important;
     }
-    h2#title{
-        font-size: large !important;
+    h3#title{
+        font-size: medium !important;
     }
 
     /* FOOTER */
@@ -196,6 +217,13 @@ p#footer-page{
 }
 
 @media screen and (max-width: 320px) {
+    /* HEADER */
+
+    img.img-profile{
+        width: 70px !important;
+        height: 70px !important;
+    }
+
     /* CONTENIDO */
 
     p.about-me{
