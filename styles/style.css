@@ -49,7 +49,7 @@ img.icon-header{
 /* CONTENIDO */
 
 main{
-    margin: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
 }
 div#about-me{
     background: linear-gradient(to top, #001b48, #004581);  
@@ -77,11 +77,65 @@ h2.projects{
     margin-bottom: 1rem;
     font-style: italic;
 }
-div#carouselExampleSlidesOnly,
-div#carouselExampleSlidesOnly1,
-div#carouselExampleSlidesOnly2,
-div#carouselExampleSlidesOnly3,
-div#carouselExampleSlidesOnly4{
+
+/* DESKTOP */
+
+h4.tittle-card-desktop{
+    margin-left: 2rem;
+    margin-bottom: .8rem;
+    border-left: 3px solid #004581;
+    padding: .5rem 0 .5rem 1rem;
+}
+div.modal-header{
+    background: linear-gradient(to top, #001b48, #004581);
+    color: #dde8f0;
+}
+p.text-card{
+    text-indent: 48px !important;
+}
+div.modal-footer{
+    background: linear-gradient(to top, #004581, #001b48);
+    color: #dde8f0;
+}
+button.modal-1{
+    background-color: #018abd;
+    border: none;
+}
+a#code{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+a#code:hover{
+    text-decoration: underline;
+}
+a.project, a.project-2, a.project-3{
+    background-color: #018abd;
+    border: none;
+}
+a.project:hover, a.project-2:hover, a.project-3:hover{
+    background-color: #004581;
+    text-decoration: underline;
+}
+
+/* MOBILE */
+
+div#mobile{
+    display: none;
+}
+div.accordion-item{
+    background: none;
+}
+div#carouselExampleControls,
+div#carouselExampleControls1,
+div#carouselExampleControls2,
+div#carouselExampleControls3,
+div#carouselExampleControls4,
+div#carouselExampleControls5,
+div#carouselExampleControls6,
+div#carouselExampleControls7,
+div#carouselExampleControls8,
+div#carouselExampleControls9{
     border-top: 2px solid #004581;
     border-right: 2px solid #004581;
     border-left: 2px solid #004581;
@@ -94,27 +148,16 @@ div#projects{
     border-bottom-right-radius: 15px;
 }
 button.accordion-button{
-    background: linear-gradient(to top, #001b48, #004581, #001b48);
+    background: linear-gradient(to top, #001b48, #004581);
     color: #dde8f0;
     font-size: large;
 }
 button.accordion-button:not(.collapsed){
-    background: linear-gradient(to top, #001b48, #004581, #001b48);
+    background: linear-gradient(to top, #001b48, #004581);
     color: #dde8f0;
 }
 div.accordion-body{
     border: none;
-}
-p.text-card{
-    text-indent: 48px !important;
-}
-a.project, a.project-2{
-    background-color: #018abd;
-    border: none;
-}
-a.project:hover, a.project-2:hover{
-    background-color: #004581;
-    text-decoration: underline;
 }
 h6.title-card{
     border-left: 3px solid #018abd;
@@ -135,7 +178,11 @@ p#footer-page{
 }
 
 @media screen and (max-width: 1024px) {
+    /* CONTENIDO */
 
+    a.project-3{
+        margin-top: .5rem !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -143,6 +190,9 @@ p#footer-page{
 
     p.text-card{
         text-indent: 32px !important;
+    }
+    a.project-2{
+        margin-top: .5rem !important;
     }
 }
 
@@ -178,6 +228,15 @@ p#footer-page{
     div#html{
         margin-bottom: 1rem;
     }
+    div#desktop{
+        display: none;
+    }
+    div#mobile{
+        display: block;
+    }
+    button.accordion-button{
+        font-size: large !important;
+    }
     p.text-card{
         text-indent: 24px !important;
     }
@@ -206,6 +265,12 @@ p#footer-page{
         font-size: medium !important;
     }
 
+    /* CONTENIDO */
+
+    button.accordion-button{
+        font-size: medium !important;
+    }
+
     /* FOOTER */
 
     footer{
@@ -231,6 +296,9 @@ p#footer-page{
     }
     img.icon{
         margin-right: .2rem !important;
+    }
+    button.accordion-button{
+        font-size: small !important;
     }
     p.text-card{
         font-size: small !important;
