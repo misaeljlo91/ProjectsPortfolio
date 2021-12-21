@@ -77,6 +77,9 @@ h2.projects{
     margin-bottom: 1rem;
     font-style: italic;
 }
+img.icon-contact{
+    margin-right: 2rem !important;
+}
 
 /* DESKTOP */
 
@@ -194,6 +197,13 @@ p#footer-page{
     a.project-2{
         margin-top: .5rem !important;
     }
+    img.icon-header, img.icon-header-2{
+        width: 24px !important;
+        margin-top: .8rem !important;
+    }
+    img.icon-contact{
+        margin-right: 1.8rem !important;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -211,10 +221,6 @@ p#footer-page{
     }
     h3#title{
         font-size: large !important;
-    }
-    img.icon-header, img.icon-header-2{
-        width: 24px !important;
-        margin-top: .8rem !important;
     }
 
     /* CONTENIDO */
@@ -270,6 +276,9 @@ p#footer-page{
     button.accordion-button{
         font-size: medium !important;
     }
+    img.icon-contact{
+        margin-right: 1.5rem !important;
+    }
 
     /* FOOTER */
 
@@ -288,19 +297,28 @@ p#footer-page{
         width: 70px !important;
         height: 70px !important;
     }
+    img.icon-header, img.icon-header-2{
+        width: 20px !important;
+    }
 
     /* CONTENIDO */
 
     p.about-me{
         font-size: smaller;
     }
+    img.icon, img.icon-2, img.icon-contact, img.icon-contact-2{
+        width: 28px !important;
+    }
     img.icon{
-        margin-right: .2rem !important;
+        margin-right: .5rem !important;
     }
     button.accordion-button{
         font-size: small !important;
     }
     p.text-card{
         font-size: small !important;
+    }
+    img.icon-contact{
+        margin-right: .8rem !important;
     }
 }
